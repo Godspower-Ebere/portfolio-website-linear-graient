@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refesh" content="1">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="icon/css/all.css">
+    <link rel="stylesheet" href="icon/css/fontawesome.min.css">
+
+    <script src="javascript/jquery.js"></script>
+    <title>Godspower Portfolio</title>
+    <script>
+        $(document).ready(function(){
+           $(".fa-expand").click(function(){
+            $(".set2").slideToggle();
+           });
+        $(".lihome").click(function(){
+            $(".cont .display .home").css("z-index","1");
+            $(".cont .display .about").css("z-index","0");
+            $(".cont .display .service").css("z-index","0");
+            $(".cont .display .Contact").css("z-index","0");
+            $(".cont .display .Portfolio").css("z-index","0");
+        });
+        $(".liabout").click(function(){
+            $(".cont .display .about").css("z-index","1");
+            $(".cont .display .home").css("z-index","0");
+            $(".cont .display .service").css("z-index","0");
+            $(".cont .display .Contact").css("z-index","0");
+            $(".cont .display .Portfolio").css("z-index","0");
+        });
+        $(".liservice").click(function(){
+            $(".cont .display .service").css("z-index","1");
+            $(".cont .display .home").css("z-index","0");
+            $(".cont .display .about").css("z-index","0");
+            $(".cont .display .Contact").css("z-index","0");
+            $(".cont .display .Portfolio").css("z-index","0");
+            
+        });
+        $(".licontact").click(function(){
+            $(".cont .display .Contact").css("z-index","1");
+            $(".cont .display .home").css("z-index","0");
+            $(".cont .display .about").css("z-index","0");
+            $(".cont .display .service").css("z-index","0");
+            $(".cont .display .Portfolio").css("z-index","0");
+          
+        });
+        $(".liportfolio").click(function(){
+            $(".cont .display .Portfolio").css("z-index","1");
+            $(".cont .display .home").css("z-index","0");
+            $(".cont .display .about").css("z-index","0");
+            $(".cont .display .service").css("z-index","0");
+            $(".cont .display .Contact").css("z-index","0");
+          
+        });
+        
+        $(".menutoggle").click(function(){
+            $(".cont .menu").slideToggle(1000);
+        })
+        $(".white").click(function(){
+            $("*").css("color","white")
+        })
+        $(".black").click(function(){
+            $("*").css("color","black")
+        })
+        $(".yellow").click(function(){
+            $("*").css("color","yellow")
+        })
+        $(".orange").click(function(){
+            $("*").css("color","rgb(238, 141, 13)")
+        })
+        $(".pink").click(function(){
+            $("*").css("color","darkmagenta")
+        })
+        });
+        
+    </script>
+</head>
+<body>
+    <div class="togglebg">
+        <div class="menutoggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Godspower</h1>
+    </div>
+    
+    <div class="setting">
+        <div class="set2">
+            <p>Theme Color</p>
+            <div class="differentcolor">
+                <div class="colors white"></div>
+                <div class="colors black"></div>
+                <div class="colors yellow"></div>
+                <div class="colors orange"></div>
+                <div class="colors pink"></div>
+            </div>
+        </div>
+        <div class="set">
+            <i class="fa fa-expand"> H i</i>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="menu">
+            <h2>Godspower</h2>
+            <ul>
+                <li class="lihome"><i class="fa fa-home"></i>Home</li>
+                <li class="liabout"><i class="fa fa-briefcase"></i>About</li>
+                <li class="liservice"><i class="fa fa-tools"></i>Service</li>
+                <li class="liportfolio"><i class="fa fa-book"></i>Portfolio</li>
+                <li class="licontact"><i class="fa fa-phone"></i>Contact</li>
+            </ul>
+        </div>
+        <div class="display">
+            <div class="home">
+                <div class="left">
+                    <h1>Hello, my name is <span class="color">Godspower</span></h1>
+                    <h2>I'm a <span class="color">Web developer</span></h2>
+                    <p>
+                        I'm a senior web developer with over 2 years experience
+                        in building high quality websites. My skills and experience range from 
+                        building responsive mobile sites that perfectly cross-browser to 
+                        building scalable website for any industry.
+                    </p>
+                    <button>Download CV</button>
+                </div>
+                <div class="right" title="Godspower">
+                    
+                </div>
+            </div>
+            
+            <div class="about">
+                <div class="head">
+                    <h1>About Me</h1>
+                    <div class="color"></div>
+                    <div class="color two"></div>
+                </div>
+                <div class="content">
+                    <h2>I'm  Godspower <br>A <span class="color">Web developer</span></h2>
+                    <p>
+                        I'm a senior web developer with over 2 years experience
+                        in building high quality websites. My skills and experience range from 
+                        building responsive mobile sites that perfectly cross-browser to 
+                        building scalable website for any industry. i provide a 100% gurantee on the 
+                        quality reliability of the code. its important to me to build long term relationship
+                        with my client, so im primarily looking for long term projects. im flexible with my working
+                        hour and will be happy to discuss your project at your eariliest convinence. i can help
+                        you or your business create a website from a design concept to a completed polished and professional
+                        site. i can also help maintain and update existing site. 
+                    </p>
+                </div>
+                <div class="bio">
+                    <div class="biocontainer">
+                        <div class="detail">
+                            <div class="birthday">
+                                <ul>
+                                    <li><b>Birthday:</b> 2 march 2007</li>
+                                    <li><b>Website:</b> <a href="http://godspower.infinityfreeapp.com/">godspower.infinityfreeapp.com</a></li>
+                                    <li><b>City:</b> Lagos</li>
+                                </ul>
+                            </div>
+                            <div class="age">
+                                <ul>
+                                    <li><b>Age:</b> <script type="text/javascript">
+                                        var date=new Date();
+                                        var year=date.getFullYear();
+                                        var age=year-2007;
+                                        document.write(age);
+                                    </script></li>
+                                    <li><b>Email:</b> eberechukwurosemary2021@gmail.com</li>
+                                    <li><b>Phone:</b> +234 704 0731 915</li>
+                                    <li><b>Freelance:</b> Available</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button>Hire</button>
+                    </div>
+                    <div class="skills">
+                       <div class="level">
+                            <div class="percent">
+                                <b>HTML</b>
+                                <i>95%</i>
+                            </div>
+                            <div class="htmlbar">
+                                <div class="bar2"></div>
+                            </div>
+                       </div>
+                       <div class="level">
+                            <div class="percent">
+                                <b>CSS</b>
+                                <i>90%</i>
+                            </div>
+                            <div class="cssbar">
+                                <div class="bar2"></div>
+                            </div>
+                       </div>
+                       <div class="level">
+                            <div class="percent">
+                                <b>Js</b>
+                                <i>75%</i>
+                            </div>
+                            <div class="jsbar">
+                                <div class="bar2"></div>
+                            </div>
+                       </div>
+                       <div class="level">
+                            <div class="percent">
+                                <b>PHP</b>
+                                <i>80%</i>
+                            </div>
+                            <div class="phpbar">
+                                <div class="bar2"></div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="head">
+                    <h1>Service</h1>
+                    <div class="color"></div>
+                    <div class="color two"></div>
+                </div>
+                <div class="skillcont">
+                    <!-- <div>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <b>App Developer</b>
+                        <p>I am a expert App Developer with 1+ Year Experience</p>
+                    </div> -->
+                    <div>
+                        <i class="fa-brands fa-html5"></i>
+                        <b>Web Developer</b>
+                        <p>I am a expert Web Developer with 2+ Year Experience</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-laptop"></i>
+                        <b>Backend</b>
+                        <p>I am a expert Backend Web Development with 1+ Year Experience</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-tools"></i>
+                        <b>Computer Engineering</b>
+                        <p>I am a expert Computer Engineer with 4+ Year Experience</p>
+                    </div>
+                    <!-- <div>
+                        <i class="fa-solid fa-palette"></i>
+                        <b>UI/UX</b>
+                        <p>I am a expert UI/UX Developer with 2+ Year Experience</p>
+                    </div> -->
+                    <div>
+                        <i class="fa-brands fa-python"></i>
+                        <b>Programmer</b>
+                        <p>I am a expert python Programmer with 2+ Year Experience</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-gamepad"></i>
+                        <b>Game Developer</b>
+                        <p>I am a expert Game Developer with 1+ Year Experience</p>
+                    </div>
+                  <!--   <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <b>SEO</b>
+                        <p>I am a expert in search engine optimaization  with 1 Year Experience</p>
+                    </div> -->
+                   <!--  <div>
+                        <i class="fa fa-atom"></i>
+                        <b>Digital Marketing</b>
+                        <p>I am a expert Digital Marketing with 1+ Year Experience</p>
+                    </div> -->
+                </div>
+                
+            </div>
+            <div class="Portfolio">
+                <div class="head">
+                    <h1>Portfolio</h1>
+                    <div class="color"></div>
+                    <div class="color two"></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="Contact">
+                <div class="head">
+                    <h1>Contact</h1>
+                    <div class="color"></div>
+                    <div class="color two"></div>
+                </div>
+                <div class="contactsec">
+                    <h1>Have You Any Question ?</h1>
+                    <p>I'M AT YOUR SERVICES ?</p>
+                    <div class="contactaddress">
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <b>Call me On</b>
+                            <p>+234 704 0731 915</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-search-location"></i>
+                            <b>Office</b>
+                            <p>Ikotun Lagos</p>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <b>Email</b>
+                            <p>eberechukwurosemary2021@gmail.com</p>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-internet-explorer"></i>
+                            <b>Website</b>
+                            <p>godspower.infinityapp.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

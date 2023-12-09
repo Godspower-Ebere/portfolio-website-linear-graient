@@ -1,0 +1,158 @@
+@media screen and (max-width:600px){
+    .togglebg h1::first-letter{
+        font-size: 50px;
+        font-style: italic;
+        color: red;
+        font-family: algerian;
+    }
+    .setting{
+    left: 50%;
+    margin-top: 0px;
+    flex-direction: column;
+}
+.setting .set2 .differentcolor .colors{
+    align-self: center;
+    width: 20px;
+    margin-bottom: 10px;
+    height: 20px;
+    }
+.setting .set2 p{
+    font-size: 20px;
+}
+.setting .set2 .differentcolor{
+    flex-direction: column;
+}
+.setting .set  *{
+    margin-right:20px;
+}
+.setting .set i{
+    font-size: 20px;
+}
+.setting .set{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    flex-direction: row;
+}
+.togglebg {
+    display: flex;
+    justify-content: space-between;
+}
+    .togglebg h1{
+        display: block;
+    }
+    .cont .menu h1{
+       display: none;
+    }
+    .cont .menu ul{
+    justify-content: center;
+}
+    .cont .menu ul li{
+    margin-top:20px;
+    margin-bottom:20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+    
+    .togglebg{
+        background-color: antiquewhite;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menutoggle{
+        display: flex;
+        margin: 10px;
+        flex-direction: column;
+        width: 50px;
+        height: 100%;
+        top: 10px;
+        left: 20px;
+        cursor: pointer;
+    }
+    .menutoggle div{
+        width: 100%;
+        padding: 5px;
+        margin: 5px;
+        background-color: black;
+        cursor: pointer;
+    }
+    .cont .menu{
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        width: 50%;
+        background: linear-gradient(45deg, rgb(120,30,200), rgb(100,230,20) , rgb(200,230,20) );
+    }
+    .cont .display .home .left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .cont .display .home .right{
+        width: 100%;
+    }
+    .cont .display .home .left p{
+        font-size: 20px;
+    }
+    .cont .display .home{
+        display: block;
+    }
+    .cont .display .home .right{
+        margin-top: 20px;
+    }
+/* About Section*/
+.cont .display .about .head{
+    font-size: 20px;
+}
+.cont .display .about .content p{
+    text-align: justify;
+    font-size: 20px;
+}
+.cont .display .about .bio .biocontainer{
+    width: 100%;
+}
+.cont .display .about .bio .biocontainer .detail{
+    flex-direction: column;
+}
+.cont .display .about .bio{
+    flex-direction: column;
+    width: 100%;
+}
+.cont .display .about .bio .skills{
+    width: 100%;
+}
+/* SERVICE SECTION************************************/
+
+.cont .display .service .head{
+    font-size: 20px;
+}
+.cont .display .service .skillcont div{
+   width: 230px;
+   height: 230px;
+   margin: 10px;
+   font-size: 17px;
+}
+.cont .display .service .skillcont div *{
+    margin: 10px;
+}
+.cont .display .Contact .contactsec .contactaddress div{
+    width: 200px;
+    height: 200px;
+}
+}
+
+@media  screen and (max-width: 1100px){
+.cont .display .about .bio .biocontainer{
+    width: 100%;
+}
+.cont .display .about .bio .biocontainer .detail{
+    flex-direction: column;
+}
+.cont .display .about .bio{
+    flex-direction: column;
+    width: 100%;
+}
+.cont .display .about .bio .skills{
+    width: 100%;
+}
+}

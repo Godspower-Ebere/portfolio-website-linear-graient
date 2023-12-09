@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: comic sans ms;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.toggle{
+    background: black;
+    color: white;
+}
+.togglered{
+    color: red;
+}
+.toggleorange{
+    color:orange;
+}
+.setting{
+    left: 55%;
+    display: flex;
+    position: absolute;
+    z-index: 10000;
+    margin-top: 0px;
+}
+.setting .set{
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.setting .set i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.setting .set2{
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.setting .set2 p{
+    color: gray;
+    text-align: justify;
+    font-size: 30px;
+}
+.setting .set2 .differentcolor{
+    display: flex;
+}
+.setting .set2 .differentcolor .colors{
+    width: 30px;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    border-radius: 50%;
+    border-radius: 1px solid red;
+    cursor: pointer;
+    border: 1px solid rgb(18, 20, 124);
+}
+.setting .set2 .differentcolor .red{
+background: white;
+}
+.setting .set2 .differentcolor .black{
+    background: black;
+}
+.setting .set2 .differentcolor .yellow{
+    background: yellow;
+}
+.setting .set2 .differentcolor .orange{
+    background: rgb(99, 60, 9);
+}
+.setting .set2 .differentcolor .pink{
+    background:darkmagenta
+}
+.cont{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    background: linear-gradient(45deg, rgb(120,30,200), rgb(100,230,20) , rgb(200,230,20) );
+    padding: 5px;
+    color: white;
+}
+.cont .menu{
+    z-index: 20000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(120,30,200), rgb(100,230,20) , rgb(200,230,20) );
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll ;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.cont .menu h2::first-letter{
+    font-size: 40px;
+    font-style: italic;
+    color: red;
+    font-family: algerian;
+}
+.cont .menu h2{
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(100,100,100);
+}
+.cont .menu ul{
+    margin:20px;
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    flex-direction: column;
+}
+.cont .menu ul li{
+    margin-top:30px;
+    cursor: pointer;
+}
+.cont .display{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    position: relative;
+}
+/* HOME SECTION***********************************/
+.cont .display .home {  
+    z-index: 1;
+    background: linear-gradient(45deg, rgb(7, 116, 7), rgb(121, 57, 15), rgb(97, 13, 72));
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    color: white;
+}
+.cont .display .home .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    margin-right: 30px;
+}
+.cont .display .home .left p{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 28px;
+}
+.cont .display .home .left h1{
+    font-size: 40px;
+}
+.cont .display .home .left h2 .color{
+    color: red;
+}
+.cont .display .home .left button{
+    width: 200px;
+    height: 70px;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 195, 255) ;
+    color: white;
+    cursor: pointer;
+}
+.cont .display .home .right{
+    width: 40%;
+    height: 70%;
+    align-self: center;
+    background: url("../image/background.jpg"); 
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    border-radius: 50px;
+}
+.cont .display .home .right:hover{
+    filter: none;
+    border-top: 5px solid red;
+    border-bottom: 5px solid rgb(13, 117, 27);
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transition: 2s;
+}
+/* ABOUT SECTION************************************/
+.cont .display .about{
+    padding: 30px;
+    background: linear-gradient(45deg, rgb(200,130,100), rgb(100,230,220) , rgb(20,230,20) );
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100%;
+}
+.cont .display .about .head{
+    font-size: 30px;
+}
+.cont .display .about .head .color{
+    width: 150px;
+    background: red;
+    height: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.cont .display .about .head .two{
+    width: 100px;
+    height: 10px;
+}
+
+.cont .display .about .content p{
+    font-size: 20px;
+    text-align: justify;
+}
+.cont .display .about .content h2{
+    margin-bottom: 20px;
+}
+.cont .display .about .bio{
+    display: flex;
+    justify-content:center;
+}
+.cont .display .about .bio .biocontainer{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.cont .display .about .bio .biocontainer .detail{
+    display: flex;
+    margin-right: 20px;
+}
+.cont .display .about .bio .biocontainer .detail .birthday ul{
+    list-style-type: none;
+}
+.cont .display .about .bio .biocontainer .detail .birthday ul li{
+    font-size: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid gray;
+}
+.cont .display .about .bio .biocontainer .detail .age ul {
+    list-style-type: none;
+}
+.cont .display .about .bio .biocontainer .detail .age ul li{
+    font-size: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid gray;
+}
+.cont .display .about .bio .biocontainer button{
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    margin-top: 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    background:  rgb(0, 195, 255) ;
+}
+.cont .display .about .bio .biocontainer button:hover{
+    background-color:rgb(150,0,0) ;
+    transition: all 2s linear;
+}
+.cont .display .about .bio .skills{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.cont .display .about .bio .skills .level{
+    display: flex;
+    flex-direction: column;
+}
+.cont .display .about .bio .skills .level .percent{
+    display: flex;
+    justify-content: space-between;
+}
+.cont .display .about .bio .skills .level .htmlbar{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: gray;
+}
+.cont .display .about .bio .skills .level .htmlbar .bar2{
+    width: 95%;
+    height: 30px;
+    border-radius: 10px;
+    background-color:red;
+}
+.cont .display .about .bio .skills .level .cssbar{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: gray;
+}
+.cont .display .about .bio .skills .level .cssbar .bar2{
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    background-color:red;
+}
+.cont .display .about .bio .skills .level .jsbar{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: gray;
+}
+.cont .display .about .bio .skills .level .jsbar .bar2{
+    width: 75%;
+    height: 30px;
+    border-radius: 10px;
+    background-color:red;
+}
+.cont .display .about .bio .skills .level .phpbar{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: gray;
+}
+.cont .display .about .bio .skills .level .phpbar .bar2{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    background-color:red;
+}
+/* SERVICE SECTION************************************/
+.cont .display .service{
+    padding: 30px;
+    background: linear-gradient(45deg, rgb(10,230,200), rgb(200,230,20) , rgb(200,130,20) );
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.cont .display .service .head{
+    font-size: 30px;
+}
+.cont .display .service .head .color{
+    width: 150px;
+    background: red;
+    height: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.cont .display .service .head .two{
+    width: 100px;
+    height: 10px;
+}
+.cont .display .service .skillcont{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cont .display .service .skillcont div{
+   width: 300px;
+   height: 300px;
+    background: rgb(41, 30, 30);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    color: white;
+    justify-content: center;
+    font-size: 20px;
+}
+.cont .display .service .skillcont div i{
+    color: red;
+    font-size: 50px;
+}
+/* PORTFOLIO */
+.cont .display .Portfolio{
+    padding: 30px;
+    background: linear-gradient(45deg, rgb(7, 116, 7), rgb(121, 57, 15), rgb(97, 13, 72) );
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    color: black;
+    
+}
+.cont .display .Portfolio .head{
+    font-size: 30px;
+}
+.cont .display .Portfolio .head .color{
+    width: 150px;
+    background: red;
+    height: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.cont .display .Portfolio .head .two{
+    width: 100px;
+    height: 10px;
+}
+.cont .display .Portfolio .head {
+    color: white;
+}
+
+
+/* CONTACT SECTION************************************/
+.cont .display .Contact{
+    padding: 30px;
+    background: linear-gradient(45deg, rgb(170,180,200), rgb(250,230,20) , rgb(20,30,220) );
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    color: black;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.cont .display .Contact .head{
+    font-size: 30px;
+}
+.cont .display .Contact .head .color{
+    width: 150px;
+    background: red;
+    height: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.cont .display .Contact .head .two{
+    width: 100px;
+    height: 10px;
+}
+.cont .display .Contact .contactsec{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.cont .display .Contact .contactsec > *{
+    margin: 20px;
+}
+.cont .display .Contact .contactsec .contactaddress{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cont .display .Contact .contactsec .contactaddress div{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.cont .display .Contact .contactsec .contactaddress div > *{
+    margin: 10px;
+}
+
+.cont .display .Contact .contactsec .contactaddress div i{
+    color: red;
+    font-size: 50px;
+}
+
+.togglebg h1{
+    display: none;
+}
+@media screen and (min-width:1500px){
+    .cont .menu{
+        width: 35%;
+    }
+}
